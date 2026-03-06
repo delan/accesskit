@@ -33,7 +33,7 @@ impl NodeId {
         Self(tree_index, local_id)
     }
 
-    pub(crate) fn with_same_tree(&self, local_id: LocalNodeId) -> Self {
+    pub fn with_same_tree(&self, local_id: LocalNodeId) -> Self {
         Self(self.0, local_id)
     }
 
